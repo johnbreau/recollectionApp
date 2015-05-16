@@ -1,0 +1,450 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"h",
+				"h1	Tag"
+			],
+			[
+				"lab",
+				"labelText"
+			],
+			[
+				"im",
+				"background-image"
+			],
+			[
+				"img",
+				"image"
+			],
+			[
+				"pa",
+				"padding-top"
+			],
+			[
+				"bac",
+				"background-repeat"
+			],
+			[
+				"no",
+				"no-repeat"
+			],
+			[
+				"paddin",
+				"padding-right"
+			],
+			[
+				"fon",
+				"font-family"
+			],
+			[
+				"backg",
+				"background-color"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"ins",
+				"installation"
+			],
+			[
+				"padding",
+				"padding-left"
+			],
+			[
+				"fl",
+				"float"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"ad",
+				"adjuster"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"th",
+				"thead	Tag"
+			],
+			[
+				"sp",
+				"speed"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 3313,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/User/Chrome.sublime-build",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"package in",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 139.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/jbreau/Desktop/GH_Repos/Foundation_Brake_Interactive/app/css/mainStyles.scss",
+		"/Users/jbreau/Desktop/GH_Repos/recollectionApp/app/css/demo.css",
+		"/Users/jbreau/Desktop/GH_Repos/recollectionApp/app/index.html",
+		"/Users/jbreau/Downloads/bootstrap-3.3.4-dist/css/bootstrap.css",
+		"/Users/jbreau/Desktop/GH_Repos/recollectionApp/www/index.html",
+		"/Users/jbreau/Desktop/GH_Repos/recollectionApp/www/styles/vendor.css",
+		"/Users/jbreau/Desktop/GH_Repos/Foundation_Brake_Interactive/app/index.html",
+		"/Users/johnbreau/Desktop/AngularJS_Cordova_Working/app/css/mainStyles.scss",
+		"/Users/johnbreau/Desktop/AngularJS_Cordova_Working/app/modules/core/views/ABAID1.html",
+		"/Users/johnbreau/Desktop/AngularJS_Cordova_Working/app/modules/core/views/ABAMM.html",
+		"/Users/johnbreau/Desktop/AngularJS_Cordova_Working/app/modules/core/config/routes.js",
+		"/Users/johnbreau/Desktop/AngularJS_Cordova_Working/app/modules/core/core.js",
+		"/Users/johnbreau/Desktop/AngularJS_Cordova_Working/app/modules/core/controllers/home.js",
+		"/Users/johnbreau/Desktop/AngularJS_Cordova_Working/app/modules/core/views/home.html",
+		"/Users/johnbreau/Desktop/AngularJS_Cordova_Working/app/index.html",
+		"/Users/johnbreau/Desktop/AngularJS_Cordova_Working/app/modules/core/views/ABAID1",
+		"/Users/johnbreau/Desktop/AngularJS_Cordova_Working/app/modules/core/views/ABA_MM.html",
+		"/Users/johnbreau/Desktop/AngularJS_Cordova_Working/app/modules/core/views/ABA_MM",
+		"/Users/johnbreau/Desktop/AngularJS_Cordova_Working/app/lib/angular-ui-router/api/angular-ui-router.d.ts",
+		"/Users/johnbreau/Desktop/AngularJS_Cordova_Working/app/css/demo.css",
+		"/Users/johnbreau/Desktop/AngularJS_Cordova_Working/app/angcor.sublime-project",
+		"/Users/johnbreau/Desktop/AngularJS_Cordova_Working/app/css/customcordova.css",
+		"/Users/johnbreau/Desktop/yo_ang/Gruntfile.js",
+		"/Users/johnbreau/Desktop/NewNew/Gruntfile.js",
+		"/Users/johnbreau/Desktop/fem-grunt-workflow-master/grunt-workflow/package.json",
+		"/Users/johnbreau/Desktop/angtest.html",
+		"/Users/johnbreau/Desktop/script.js",
+		"/Users/johnbreau/Desktop/FEAngular/Gruntfile.js",
+		"/Users/johnbreau/Desktop/upper.html",
+		"/Users/johnbreau/Desktop/basicAngular.html",
+		"/Users/johnbreau/Desktop/GitHub_Repos/Foundation_Brake_Interactive/index.html",
+		"/Users/johnbreau/Desktop/GitHub_Repos/Foundation_Brake_Interactive/styles/styles.css",
+		"/Users/johnbreau/Dropbox/henrybreau_com/index.html",
+		"/Users/johnbreau/Dropbox/__All_Code_Snippets/Frameworks and HTML_Templates/two_colunm_header_footer_vertically_responsive.html",
+		"/Users/johnbreau/Desktop/left-menu-2-column-liquid-layout-percentage/index.html",
+		"/Users/johnbreau/Desktop/left-menu-2-column-liquid-layout-percentage/screen.css",
+		"/Users/johnbreau/Dropbox/__IN PROGRESS/TS15-016_Foundation_Brake_Training_Mats_w_Jeff_Hall/app/ABA_MainMenu.html",
+		"/Users/johnbreau/Dropbox/__IN PROGRESS/TS15-016_Foundation_Brake_Training_Mats_w_Jeff_Hall/app/styles/styles.css",
+		"/Users/johnbreau/Dropbox/__IN PROGRESS/TS15-016_Foundation_Brake_Training_Mats_w_Jeff_Hall/app/scripts/FBI_mainApp.js",
+		"/Users/johnbreau/Dropbox/__IN PROGRESS/TS15-016_Foundation_Brake_Training_Mats_w_Jeff_Hall/app/index.html",
+		"/Users/johnbreau/Desktop/fluid_layout/index.html",
+		"/Users/johnbreau/Desktop/fluid_layout/styles.css",
+		"/Users/johnbreau/Dropbox/AirBraked/vipar_signage.php",
+		"/Users/johnbreau/Dropbox/AirBraked/ABS_Animations.php",
+		"/Users/johnbreau/Dropbox/AirBraked/suggestionBox/suggestionBox.php",
+		"/Users/johnbreau/Dropbox/AirBraked/sorry.html",
+		"/Users/johnbreau/Dropbox/AirBraked/premium.php",
+		"/Users/johnbreau/Dropbox/AirBraked/hf/footer.html",
+		"/Users/johnbreau/Dropbox/AirBraked/orig_test.php",
+		"/Users/johnbreau/Dropbox/AirBraked/droptestget.php",
+		"/Users/johnbreau/Dropbox/AirBraked/hf/header.html",
+		"/Users/johnbreau/Dropbox/AirBraked/droptest2.php",
+		"/Users/johnbreau/Dropbox/AirBraked/logoff.html",
+		"/Users/johnbreau/Dropbox/AirBraked/sessiononemats.php",
+		"/Users/johnbreau/Dropbox/AirBraked/Old_test.php",
+		"/Users/johnbreau/Dropbox/AirBraked/test.php",
+		"/Users/johnbreau/Dropbox/AirBraked/special/special.php",
+		"/Users/johnbreau/Dropbox/AirBraked/training/abs/sendiag.php",
+		"/Users/johnbreau/Dropbox/AirBraked/training/abs/solediag.php",
+		"/Users/johnbreau/Dropbox/AirBraked/correspondence_s_cam.php",
+		"/Users/johnbreau/Dropbox/AirBraked/techtopics_1.php",
+		"/Users/johnbreau/Dropbox/AirBraked/techtopics_ep1.php",
+		"/Users/johnbreau/Dropbox/AirBraked/techtopics1vid.php",
+		"/Users/johnbreau/Dropbox/AirBraked/training/foundation/quizscript_foundation.php",
+		"/Users/johnbreau/Dropbox/AirBraked/training/foundation/frictionwearindex.php",
+		"/Users/johnbreau/Dropbox/AirBraked/training/foundation/frictionwear1.php",
+		"/Users/johnbreau/Dropbox/AirBraked/training/foundation/frictionwear2.php",
+		"/Users/johnbreau/Dropbox/AirBraked/training/foundation/frictionwear3.php",
+		"/Users/johnbreau/Dropbox/AirBraked/training/disc/3_6_month_maint.php",
+		"/Users/johnbreau/Dropbox/AirBraked/training/disc/ad1.php",
+		"/Users/johnbreau/Dropbox/AirBraked/training/disc/ad2.php",
+		"/Users/johnbreau/Dropbox/AirBraked/training/disc/ad3.php",
+		"/Users/johnbreau/Dropbox/AirBraked/training/disc/ad4.php",
+		"/Users/johnbreau/Dropbox/AirBraked/training/disc/ad5.php",
+		"/Users/johnbreau/Dropbox/AirBraked/training/disc/ad_overview_1.php",
+		"/Users/johnbreau/Dropbox/AirBraked/training/disc/ad_overview_2.php",
+		"/Users/johnbreau/Dropbox/AirBraked/training/disc/ad_overview_3.php",
+		"/Users/johnbreau/Dropbox/AirBraked/training/disc/ad_overview_4.php",
+		"/Users/johnbreau/Dropbox/AirBraked/training/disc/ad_overview_5.php",
+		"/Users/johnbreau/Dropbox/AirBraked/training/disc/ad_overview_index.php",
+		"/Users/johnbreau/Dropbox/AirBraked/training/disc/adindex.php",
+		"/Users/johnbreau/Dropbox/AirBraked/training/disc/identification.php",
+		"/Users/johnbreau/Dropbox/AirBraked/training/airsys/bair1.php",
+		"/Users/johnbreau/Dropbox/AirBraked/training/airsys/bair2.php",
+		"/Users/johnbreau/Dropbox/AirBraked/training/airsys/bair3.php",
+		"/Users/johnbreau/Dropbox/AirBraked/training/airsys/bair4.php",
+		"/Users/johnbreau/Dropbox/AirBraked/training/airsys/bair5.php",
+		"/Users/johnbreau/Dropbox/AirBraked/training/airsys/bair6.php",
+		"/Users/johnbreau/Dropbox/AirBraked/training/airsys/bair7.php",
+		"/Users/johnbreau/Dropbox/AirBraked/training/airsys/bairindex.php",
+		"/Users/johnbreau/Dropbox/AirBraked/training/airsys/overview.php",
+		"/Users/johnbreau/Dropbox/AirBraked/training/airsys/quizscript_bair.php",
+		"/Users/johnbreau/Dropbox/AirBraked/training/airsys/quizscript_overview.php",
+		"/Users/johnbreau/Dropbox/AirBraked/training/airsys/rm_d1_p1.php",
+		"/Users/johnbreau/Dropbox/AirBraked/training/airsys/rm_d1_p2.php",
+		"/Users/johnbreau/Dropbox/AirBraked/training/airsys/trailer.php",
+		"/Users/johnbreau/Dropbox/AirBraked/training/airsys/trucktractor.php",
+		"/Users/johnbreau/Dropbox/AirBraked/training/actuators/actuator_overview.php",
+		"/Users/johnbreau/Dropbox/AirBraked/training/actuators/safety1.php",
+		"/Users/johnbreau/Dropbox/AirBraked/training/actuators/safety2.php",
+		"/Users/johnbreau/Dropbox/AirBraked/training/actuators/safetyindex.php",
+		"/Users/johnbreau/Dropbox/AirBraked/training/actuators/wclevis.php",
+		"/Users/johnbreau/Dropbox/AirBraked/training/abs/2s1m.php",
+		"/Users/johnbreau/Dropbox/AirBraked/training/abs/2s1m1.php",
+		"/Users/johnbreau/Dropbox/AirBraked/training/abs/2s1m2.php",
+		"/Users/johnbreau/Dropbox/AirBraked/training/abs/2s1m3.php",
+		"/Users/johnbreau/Dropbox/AirBraked/training/abs/2s1m4.php",
+		"/Users/johnbreau/Dropbox/AirBraked/training/abs/2s1m5.php",
+		"/Users/johnbreau/Dropbox/AirBraked/training/abs/2s1m6.php",
+		"/Users/johnbreau/Dropbox/AirBraked/training/abs/2s1mindex.php",
+		"/Users/johnbreau/Dropbox/AirBraked/training/abs/4s2m.php",
+		"/Users/johnbreau/Dropbox/AirBraked/training/abs/4s2m1.php",
+		"/Users/johnbreau/Dropbox/AirBraked/training/abs/4s2m2.php",
+		"/Users/johnbreau/Dropbox/AirBraked/training/abs/4s2m3.php",
+		"/Users/johnbreau/Dropbox/AirBraked/training/abs/4s2m4.php",
+		"/Users/johnbreau/Dropbox/AirBraked/training/abs/4s2m5.php",
+		"/Users/johnbreau/Dropbox/AirBraked/training/abs/4s2mindex.php",
+		"/Users/johnbreau/Dropbox/AirBraked/training/abs/absbasics.php",
+		"/Users/johnbreau/Dropbox/AirBraked/training/abs/absregs.php",
+		"/Users/johnbreau/Dropbox/AirBraked/training/abs/basic.php",
+		"/Users/johnbreau/Dropbox/AirBraked/training/abs/ecu.php",
+		"/Users/johnbreau/Dropbox/AirBraked/training/abs/ffabs.php",
+		"/Users/johnbreau/Dropbox/AirBraked/training/abs/infocenter.php",
+		"/Users/johnbreau/Dropbox/AirBraked/training/abs/jhabs1.php",
+		"/Users/johnbreau/Dropbox/AirBraked/training/abs/jhabs2.php",
+		"/Users/johnbreau/Dropbox/AirBraked/training/abs/jhabs3.php",
+		"/Users/johnbreau/Dropbox/AirBraked/training/abs/jhabsindex.php",
+		"/Users/johnbreau/Dropbox/AirBraked/training/abs/legotest.php"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"ui-view",
+			"angular",
+			"ui-view",
+			"uiview",
+			"kinds",
+			"6ABS33",
+			"6ABS29",
+			"6ABS21",
+			"6ABS19",
+			"6abs36",
+			"6abs10",
+			"6abs9",
+			"5ABS29",
+			"5ABS23",
+			"5ABS22",
+			"ABS14",
+			"observe and determine",
+			"5ABS11",
+			"5ABS10",
+			"ABS36",
+			"4ABS19",
+			"park/emergency ",
+			"jumper",
+			"confirm and replace",
+			"assure open lines",
+			"white-space",
+			"​.ui-li-desc",
+			"​.ui-page .ui-content .ui-listview .ui-li-desc",
+			">\n",
+			"listview",
+			"aba",
+			"trouble",
+			"aba",
+			">"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 3313,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1394,
+								1394
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 118.0
+	},
+	"output.sftp":
+	{
+		"height": 118.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"",
+				"calculator.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 230.0,
+	"status_bar_visible": true
+}

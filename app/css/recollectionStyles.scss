@@ -1,3 +1,18 @@
+@font-face { font-family: Fruitiger; src: url('/fonts/fruitiger/FrutigerLTPro-Roman.otf'); } 
+@font-face { font-family: FruitigerBold; src: url('/fonts/fruitiger/FrutigerLTPro-Bold.otf'); } 
+
+
+/*Variables*/
+
+$mainFont: Times;
+$headlineFont: FruitigerBold;
+
+
+h1 {
+  font-family: $headlineFont;
+}
+
+
 ibody {
     opacity: 1;
     -webkit-transition: opacity 1s ease;
@@ -302,6 +317,10 @@ border-color: #fff;
 
 .header-placeholder {
     height: 50px;
+}
+
+h1 {
+  text-align: left;
 }
 
 @media screen and (min-width: 768px) {

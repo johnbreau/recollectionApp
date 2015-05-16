@@ -16,6 +16,7 @@ Cordova, Angular & Bootstrap Scaffolding with build-out)
 1. cd to enclosing directory
 2. npm install && bower install
 3. grunt serve
+4. make changes at Angular App level export changes to Cordova
 
 ### Technologies:
 
