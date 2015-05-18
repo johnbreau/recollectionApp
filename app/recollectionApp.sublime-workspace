@@ -100,10 +100,10 @@
 	"buffers":
 	[
 		{
-			"file": "index.html",
+			"file": "modules/core/views/home.html",
 			"settings":
 			{
-				"buffer_size": 3313,
+				"buffer_size": 193,
 				"line_ending": "Unix"
 			}
 		}
@@ -144,9 +144,10 @@
 	},
 	"file_history":
 	[
+		"/Users/jbreau/Desktop/GH_Repos/recollectionApp/app/index.html",
+		"/Users/jbreau/Desktop/GH_Repos/recollectionApp/app/css/recollectionStyles.scss",
 		"/Users/jbreau/Desktop/GH_Repos/Foundation_Brake_Interactive/app/css/mainStyles.scss",
 		"/Users/jbreau/Desktop/GH_Repos/recollectionApp/app/css/demo.css",
-		"/Users/jbreau/Desktop/GH_Repos/recollectionApp/app/index.html",
 		"/Users/jbreau/Downloads/bootstrap-3.3.4-dist/css/bootstrap.css",
 		"/Users/jbreau/Desktop/GH_Repos/recollectionApp/www/index.html",
 		"/Users/jbreau/Desktop/GH_Repos/recollectionApp/www/styles/vendor.css",
@@ -270,8 +271,7 @@
 		"/Users/johnbreau/Dropbox/AirBraked/training/abs/jhabs1.php",
 		"/Users/johnbreau/Dropbox/AirBraked/training/abs/jhabs2.php",
 		"/Users/johnbreau/Dropbox/AirBraked/training/abs/jhabs3.php",
-		"/Users/johnbreau/Dropbox/AirBraked/training/abs/jhabsindex.php",
-		"/Users/johnbreau/Dropbox/AirBraked/training/abs/legotest.php"
+		"/Users/johnbreau/Dropbox/AirBraked/training/abs/jhabsindex.php"
 	],
 	"find":
 	{
@@ -345,18 +345,18 @@
 			[
 				{
 					"buffer": 0,
-					"file": "index.html",
+					"file": "modules/core/views/home.html",
 					"settings":
 					{
-						"buffer_size": 3313,
+						"buffer_size": 193,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1394,
-								1394
+								193,
+								193
 							]
 						],
 						"settings":
@@ -364,9 +364,7 @@
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/HTML/HTML.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,

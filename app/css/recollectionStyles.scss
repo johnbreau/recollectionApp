@@ -4,7 +4,7 @@
 
 /*Variables*/
 
-$mainFont: Times;
+$mainFont: Fruitiger;
 $headlineFont: FruitigerBold;
 
 
@@ -52,6 +52,18 @@ section {
     margin-bottom: 20px;
     text-align: center;
 }
+
+.metroButtons {
+  padding: .5em;
+  font-family: $mainFont;
+  float:left;
+  width:35%;
+  height:5em;
+  background-color: #000;
+  color: #fff;
+  margin: 1em;
+  }
+
 
 @media (min-width: 768px) {
 
