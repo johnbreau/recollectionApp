@@ -413,6 +413,7 @@ module.exports.metadata =
     "org.apache.cordova.inappbrowser": "0.6.0",
     "org.apache.cordova.media": "0.2.16",
     "org.apache.cordova.media-capture": "0.3.6",
+    "cordova-plugin-whitelist": "1.0.0",
     "org.apache.cordova.file": "1.3.3"
 }
 // BOTTOM OF METADATA
