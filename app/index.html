@@ -15,7 +15,6 @@
     <!-- build:css styles/custom.css -->
         <!-- injector:css -->
         <link rel="stylesheet" href="css/customcordova.css">
-        <link rel="stylesheet" href="css/demo.css">
         <link rel="stylesheet" href="css/recollectionStyles.css">
         <!-- endinjector -->
     <!-- endbuild -->
@@ -29,9 +28,22 @@
             <div class="container">
                 <div class="navbar-header">
                     <a class="navbar-brand visible-xs" href="#">
-                        recollectionProject
+                        a guided journal
                     </a>
+                    <button type="button" class="navbar-toggle">
+                        <span class="sr-only">Toggle Navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
                 </div>
+                    <ul class="nav navbar-nav navbar-right collapse navbar-collapse">
+                        <li>New Entry</li>
+                        <li>Past Entry</li>
+                        <li>Guidance</li>
+                        <li>New Tag</li>
+                        <li>Search by Tag</li>
+                    </ul>
             </div>
         </div>
     </header>
@@ -59,7 +71,8 @@
 
     <footer class="footer">
         <div class="container">
-            <p>Code licensed under <a href="https://github.com/keshavos/generator-angularjs-cordova/">MIT License</a>.</p>
+          <div class="rows">
+          </div>
         </div>
     </footer>
 

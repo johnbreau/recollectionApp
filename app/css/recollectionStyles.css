@@ -45,11 +45,16 @@ section {
   padding: .5em;
   font-family: Fruitiger;
   float: left;
-  width: 35%;
-  height: 5em;
+  width: 13.5em;
+  height: 13.5em;
   background-color: #000;
   color: #fff;
-  margin: 1em; }
+  margin: 1em;
+  text-align: center; }
+
+.metroButtons i {
+  top: 27.5%;
+  font-size: 5em; }
 
 @media (min-width: 768px) {
   .bs-social {
@@ -249,11 +254,6 @@ section {
   .bs-sidebar.affix .bs-sidenav {
     margin-top: 0;
     margin-bottom: 0; } }
-@media (min-width: 1200px) {
-  /* Widen the fixed sidebar again */
-  .bs-sidebar.affix-bottom,
-  .bs-sidebar.affix {
-    width: 263px; } }
 /* Not enough room on mobile for markup tab, js tab, and plunk btn.
   And no one cares about plunk button on a phone anyway */
 @media only screen and (max-device-width: 480px) {
