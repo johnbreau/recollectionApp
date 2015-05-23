@@ -6,7 +6,7 @@
   src: url("/fonts/fruitiger/FrutigerLTPro-Bold.otf"); }
 /*Variables*/
 h1 {
-  font-family: FruitigerBold; }
+  font-family: FruitigerBold, arial; }
 
 ibody {
   opacity: 1; }
@@ -38,6 +38,9 @@ ibody {
 
 .metroButtons:hover {
   color: #ff6633; }
+
+.rp_inputBox {
+  margin: 2em; }
 
 .bs-header {
   padding: 30px 15px 40px;
