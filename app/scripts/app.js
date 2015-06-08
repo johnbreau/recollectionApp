@@ -27,6 +27,10 @@ angular
         templateUrl: 'views/dailyForm1.html',
         controller: 'AboutCtrl'
       })
+      .when('/dailyForm2', {
+        templateUrl: 'views/dailyForm2.html',
+        controller: 'AboutCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });

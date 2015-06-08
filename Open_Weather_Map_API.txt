@@ -1,0 +1,9 @@
+Open Weather Map API
+
+username: johnbreau
+pass: openWeatherPass
+API key: fdcf9e40f8e2bed200c2a46856a44335
+
+
+Kansas City city ID - city/4393217
+Geo coords - [ -94.58, 39.1 ]

@@ -1,0 +1,51 @@
+
+ <form id="localStorageTest" method="post" action="">
+ 	
+ 	<div class="input-group input-group-lg rp_inputBox">
+    <span class="input-group-addon" id="sizing-addon1">></span>
+    <input type="text" name="MLB" id="MLB" class="form-control stored" placeholder="MLB" value="" />
+	</div>
+	
+	<div class="input-group input-group-lg rp_inputBox">
+    <span class="input-group-addon" id="sizing-addon1">></span> 
+    <input type="email" name="weather" id="weather" class="form-control stored" placeholder="Weather" value="" />
+	</div>
+
+	<div class="input-group input-group-lg rp_inputBox"> 
+    <a href="#/dailyForm3"><input type="submit" class="btn btn-default pull-right" value="Submit" /></a>
+	</div>
+
+</form>
+
+		<script type="text/javascript">
+		$(document).ready(function () {
+		    function init() {
+		        if (localStorage["MLB"]) {
+		            $('#MLB').val(localStorage["MLB"]);
+		        }
+		        if (localStorage["weather"]) {
+		            $('#weather').val(localStorage["weather"]);
+		        }
+		    }
+		    init();
+		});
+
+		$('.stored').keyup(function () {
+		    localStorage[$(this).attr('name')] = $(this).val();
+		});
+
+		$('#localStorageTest').submit(function() {
+		    localStorage.clear();
+		});
+
+		</script>
+
+		<script type="text/javascript">
+		$(document).ready(function () {
+
+					Weather.getCurrent("Kansas City", function(current) {
+  					console.log(["currently:",current.temperature(),"and",current.conditions()].join(" "));
+					});
+
+		});
+		</script>
