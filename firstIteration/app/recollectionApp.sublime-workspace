@@ -136,7 +136,9 @@
 	},
 	"file_history":
 	[
+		"/Users/jbreau/Desktop/GH_Repos/recollectionApp/app/modules/core/config/routes.js",
 		"/Users/jbreau/Desktop/GH_Repos/recollectionApp/app/modules/core/views/home.html",
+		"/Users/jbreau/Desktop/GH_Repos/recollectionApp/app/modules/core/views/dailyForm1.html",
 		"/Users/jbreau/Desktop/GH_Repos/recollectionApp/app/css/recollectionStyles.scss",
 		"/Users/jbreau/Desktop/GH_Repos/recollectionApp/app/index.html",
 		"/Users/jbreau/Desktop/GH_Repos/Foundation_Brake_Interactive/app/css/mainStyles.scss",
@@ -261,9 +263,7 @@
 		"/Users/johnbreau/Dropbox/AirBraked/training/abs/ecu.php",
 		"/Users/johnbreau/Dropbox/AirBraked/training/abs/ffabs.php",
 		"/Users/johnbreau/Dropbox/AirBraked/training/abs/infocenter.php",
-		"/Users/johnbreau/Dropbox/AirBraked/training/abs/jhabs1.php",
-		"/Users/johnbreau/Dropbox/AirBraked/training/abs/jhabs2.php",
-		"/Users/johnbreau/Dropbox/AirBraked/training/abs/jhabs3.php"
+		"/Users/johnbreau/Dropbox/AirBraked/training/abs/jhabs1.php"
 	],
 	"find":
 	{
