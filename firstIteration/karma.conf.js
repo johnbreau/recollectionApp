@@ -14,18 +14,15 @@ module.exports = function(config) {
         // List of files / patterns to load in the browser
         files: [
             <!-- injector:bowerjs -->
-            'app/lib/jquery/dist/jquery.js',
-            'app/lib/bootstrap/dist/js/bootstrap.js',
-            'app/lib/angular/angular.js',
-            'app/lib/angular-resource/angular-resource.js',
-            'app/lib/angular-mocks/angular-mocks.js',
-            'app/lib/angular-cookies/angular-cookies.js',
-            'app/lib/angular-animate/angular-animate.js',
-            'app/lib/angular-touch/angular-touch.js',
-            'app/lib/angular-sanitize/angular-sanitize.js',
-            'app/lib/angular-bootstrap/ui-bootstrap-tpls.js',
-            'app/lib/angular-ui-utils/ui-utils.js',
-            'app/lib/angular-ui-router/release/angular-ui-router.js',
+            'bower_components/jquery/dist/jquery.js',
+            'bower_components/bootstrap/dist/js/bootstrap.js',
+            'bower_components/angular/angular.js',
+            'bower_components/angular-resource/angular-resource.js',
+            'bower_components/angular-mocks/angular-mocks.js',
+            'bower_components/angular-cookies/angular-cookies.js',
+            'bower_components/angular-animate/angular-animate.js',
+            'bower_components/angular-touch/angular-touch.js',
+            'bower_components/angular-sanitize/angular-sanitize.js',
             <!-- endinjector -->
 
             'app/js/config.js',

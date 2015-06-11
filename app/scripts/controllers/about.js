@@ -2,10 +2,10 @@
 
 /**
  * @ngdoc function
- * @name bdRaApp.controller:AboutCtrl
+ * @name bdRecapApp.controller:AboutCtrl
  * @description
  * # AboutCtrl
- * Controller of the bdRaApp
+ * Controller of the bdRecapApp
  */
 angular.module('recollectionApp')
   .controller('AboutCtrl', function ($scope) {

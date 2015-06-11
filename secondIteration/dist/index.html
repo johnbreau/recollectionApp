@@ -1,0 +1,33 @@
+<!doctype html> <html class="no-js"> <head> <meta charset="utf-8"> <title></title> <meta name="description" content=""> <meta name="viewport" content="width=device-width"> <!-- Place favicon.ico and apple-touch-icon.png in the root directory --> <link rel="stylesheet" href="css/vendor.css"> <link rel="stylesheet" href="css/main.e2567a03.css">  <body ng-app="recollectionApp"> <!-- =================== Navigation bar =================== --> <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]--> <header class="navbar navbar-default navbar-fixed-top"> <div class="navbar-inner"> <div class="container"> <div class="navbar-header"> <a class="navbar-brand visible-xs" ng-href="#"> a guided journal </a> <button type="button" class="navbar-toggle"> <span class="sr-only">Toggle Navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> </div> <!--Tabbed Navigation and Responsive Hamburger--> <!-- <ul class="nav navbar-nav navbar-right collapse navbar-collapse">
+                        <a href="/"><li>New Entry</li></a>
+                        <li>Past Entry</li>
+                        <li>Guidance</li>
+                        <li>New Tag</li>
+                        <li>Search by Tag</li>
+                    </ul> --> </div> </div> </header> <div class="header-placeholder"></div> <div role="main"> <header class="bs-header text-center" id="overview"> <div class="container"> <h1 id="app-heading"> The<br> Recollection<br> Project </h1> </div> </header> <div class="container"> <div class="row"> <div class="col-md-12"> <div ng-view=""></div> </div> </div> </div> <!-- /.container --> </div> <!-- /.main --> <footer class="footer"> <div class="container"> <div class="rows"> </div> </div> </footer> <!-- 
+     Add your site or application content here
+    <div class="container">
+      <div class="header">
+        <ul class="nav nav-pills pull-right">
+          <li class="active"><a ng-href="#">a guided journal</a></li>
+        </ul>
+        <h3 class="text-muted">bdRa</h3>
+      </div>
+
+      <div ng-view=""></div>
+
+      <div class="footer">
+        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
+      </div>
+    </div> --> <!-- Google Analytics: change UA-XXXXX-X to be your site's ID --> <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-XXXXX-X');
+       ga('send', 'pageview');</script> <!--[if lt IE 9]>
+    <script src="bower_components/es5-shim/es5-shim.js"></script>
+    <script src="bower_components/json3/lib/json3.min.js"></script>
+    <![endif]--> <script src="scripts/vendor.d41d8cd9.js"></script> <script src="scripts/scripts.4923df6f.js"></script>  

@@ -1,0 +1,36 @@
+<form id="localStorageTest" method="post" action=""> <div class="input-group input-group-lg rp_inputBox"> <span class="input-group-addon" id="sizing-addon1">></span> <input type="text" name="entryTitle" id="entryTitle" class="form-control stored" placeholder="Entry Title" value=""> </div> <div class="input-group input-group-lg rp_inputBox"> <span class="input-group-addon" id="sizing-addon1">></span> <input type="email" name="tags" id="tags" class="form-control stored" placeholder="Tags" value=""> </div> <div class="input-group input-group-lg rp_inputBox"> <span class="input-group-addon" id="sizing-addon1">></span> <textarea class="form-control stored textarea" rows="5" name="dailyEntry" id="dailyEntry" placeholder="Your Daily Entry">
+	</div>
+
+	<div class="input-group input-group-lg rp_inputBox"> 
+    <a href="#/dailyForm2"><input type="submit" class="btn btn-default pull-right" value="Next"></a>
+	</div>
+
+</form>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+
+		<script type="text/javascript">
+		$(document).ready(function () {
+		    function init() {
+		        if (localStorage["entryTitle"]) {
+		            $('#entryTitle').val(localStorage["entryTitle"]);
+		        }
+		        if (localStorage["tags"]) {
+		            $('#tags').val(localStorage["tags"]);
+		        }
+		        if (localStorage["dailyEntry"]) {
+		            $('#dailyEntry').val(localStorage["dailyEntry"]);
+		        }
+		    }
+		    init();
+		});
+
+		$('.stored').keyup(function () {
+		    localStorage[$(this).attr('name')] = $(this).val();
+		});
+
+		$('#localStorageTest').submit(function() {
+		    localStorage.clear();
+		});
+
+		</script>
