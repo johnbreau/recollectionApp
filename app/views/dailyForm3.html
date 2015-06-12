@@ -1,0 +1,58 @@
+
+ <form id="dailyEntry" name="dailtyEntry" >
+ 	
+ 	<div class="input-group input-group-lg rp_inputBox">
+  		 <span class="input-group-addon" id="sizing-addon1">></span>
+   		 <input type="text" name="pain" id="pain" class="form-control stored" placeholder="Pain Level" value="" />
+	</div>
+	
+	<div class="input-group input-group-lg rp_inputBox">	
+ 		<span class="input-group-addon" id="sizing-addon1">></span> 
+    		<input type="email" name="dailyNews" id="dailyNews" class="form-control stored" placeholder="Daily News" value=""/>
+	</div>
+
+	<div class="input-group input-group-lg rp_inputBox"> 
+		<a href="#/dailyForm2"><input type="button" class="btn btn-default pull-left" value="Back" /></a>
+    		<input type="submit" class="btn btn-default pull-right submitForm"  value="Submit" /></a>
+	</div>
+
+</form>
+
+<div id="output"></div>
+
+		<script type="text/javascript">
+		$(document).ready(function () {
+		    function init() {
+		        if (localStorage["pain"]) {
+		            $('#pain').val(localStorage["pain"]);
+		        }
+		        if (localStorage["dailyNews"]) {
+		            $('#dailyNews').val(localStorage["dailyNews"]);
+		        }
+		    }
+		    init();
+		});
+
+		$('.stored').keyup(function () {
+		    localStorage[$(this).attr('name')] = $(this).val();
+		});
+
+		</script>
+
+
+		<script type="text/javascript">
+
+			$(".submitForm").click (function() {
+
+			var dailyJSON = JSON.stringify(localStorage);
+			localStorage.clear();
+
+			var xhr = new XMLHttpRequest();
+    			xhr.open("POST", "https://api.mongolab.com/api/1/databases/recollectionapp/collections/daily?apiKey=0ICZTbnaNJoaKZDCnIl-NIZZ-Jd8_TmB", true);
+    			xhr.setRequestHeader("Content-Type", "application/json");
+    			xhr.send(dailyJSON);
+
+			});
+
+		</script>
+

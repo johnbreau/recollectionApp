@@ -1,5 +1,5 @@
 
- <form id="localStorageTest" method="post" action="">
+ <form id="dailyEntry" name="dailtyEntry" >
  	
  	<div class="input-group input-group-lg rp_inputBox">
     <span class="input-group-addon" id="sizing-addon1">></span>
@@ -12,7 +12,8 @@
 	</div>
 
 	<div class="input-group input-group-lg rp_inputBox"> 
-    <a href="#/dailyForm3"><input type="submit" class="btn btn-default pull-right" value="Submit" /></a>
+	<a href="#/dailyForm1"><input type="button" class="btn btn-default pull-left" value="Back" /></a>
+    	<a href="#/dailyForm3"><input type="button" class="btn btn-default pull-right" value="Next" /></a>
 	</div>
 
 </form>
@@ -20,6 +21,7 @@
 <div id="output"></div>
 
 		<script type="text/javascript">
+		
 		$(document).ready(function () {
 		    function init() {
 		        if (localStorage["MLB"]) {
@@ -36,11 +38,22 @@
 		    localStorage[$(this).attr('name')] = $(this).val();
 		});
 
-		$('#localStorageTest').submit(function() {
-		    localStorage.clear();
-		});
-
 		</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 		<script type="text/javascript">
