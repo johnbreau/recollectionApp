@@ -8,7 +8,7 @@
 	
 	<div class="input-group input-group-lg rp_inputBox">	
     <span class="input-group-addon" id="sizing-addon1">></span> 
-    <input type="email" name="weather" id="weather" class="form-control stored" placeholder="Weather" value=""/>
+    <input type="email" name="weather" id="weather" class="form-control stored" placeholder="<span id='output'></span>" value=""></input>
 	</div>
 
 	<div class="input-group input-group-lg rp_inputBox"> 
@@ -17,8 +17,6 @@
 	</div>
 
 </form>
-
-<div id="output"></div>
 
 		<script type="text/javascript">
 		
@@ -41,54 +39,19 @@
 		</script>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 		<script type="text/javascript">
-
 		$(document).ready(function () {
-    		$.getJSON("https://api.forecast.io/forecast/d3d34411e6a867665dfdaffc8b82e77e/-94.58,39.1", function(result){
-       		
-       			alert(result);
 
-   			 });
+					Weather.getCurrent("Kansas City", function(current) {
+  					var currentTemp = current.temperature();
+  					var currentCond = current.conditions();				
+  					var finalTemp = Math.round(parseInt(currentTemp) - 273.15) * 9 / 5 + 32;
+  					$("#weather").attr('placeholder', finalTemp + " " + currentCond);	
+
+					});
+
 		});
-
 		</script>
 
 
-
-		<script type="text/javascript">
-		// $(document).ready(function () {
-
-		// 			Weather.getCurrent("Kansas City", function(current) {
-
-  // 					var currentTemp = current.temperature();
-  // 					var currentCond = current.conditions();
-  					
-  // 					var finalTemp = Math.round(parseInt(currentTemp) - 273.15) * 9 / 5 + 32;
-
-  // 					alert(finalTemp);
-
-
-		// 			});
-
-
-
-		// });
-		</script>
-
-		<!-- API http://api.openweathermap.org/data/2.5/weather?id=4393217 -->
 
