@@ -1,13 +1,5 @@
 'use strict';
 
-/**
- * @ngdoc overview
- * @name bdRaApp
- * @description
- * # bdRaApp
- *
- * Main module of the application.
- */
 angular
   .module('recollectionApp', [
     'ngAnimate',
@@ -38,6 +30,11 @@ angular
       .when('/dailyForm3', {
         templateUrl: 'views/dailyForm3.html',
         controller: 'AboutCtrl'
+      })
+
+       .when('/mainCalendar', {
+         templateUrl: 'views/mainCalendar.html',
+         controller: 'AboutCtrl'
       })
       
       .otherwise({

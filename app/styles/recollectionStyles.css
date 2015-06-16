@@ -76,6 +76,9 @@ textarea {
 h1 {
   text-align: left; }
 
+#calendar {
+  padding-left: 2em; }
+
 #currentWeather {
   padding-left: 2em; }
 
@@ -107,6 +110,10 @@ h1 {
   .navbar-nav .dropdown .navbar-brand {
     max-width: 200px;
     margin-right: 5px;
-    margin-left: 10px; } }
+    margin-left: 10px; }
+
+  #calendar {
+    padding-left: 2em;
+    height: auto; } }
 
 /*# sourceMappingURL=recollectionStyles.css.map */

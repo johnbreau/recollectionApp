@@ -102,6 +102,11 @@ h1 {
   text-align: left;
 }
 
+#calendar {
+  padding-left: 2em;
+
+}
+
 #currentWeather {
   padding-left: 2em;
 }
@@ -118,19 +123,18 @@ h1 {
 
     h1 {
         font-size: 3em;
-
     }
 
     .metroButtons {
-  padding: .25em;
-  font-family: $mainFont;
-  float:left;
-  width:7.5em;
-  height:7.5em;
-  background-color: #000;
-  color: #fff;
-  margin: .5em;
-  text-align: center;
+      padding: .25em;
+      font-family: $mainFont;
+      float:left;
+      width:7.5em;
+      height:7.5em;
+      background-color: #000;
+      color: #fff;
+      margin: .5em;
+      text-align: center;
   }
 
   .metroButtons i {
@@ -138,11 +142,15 @@ h1 {
     font-size: 2.25em;
 }
 
-
-    .navbar-nav .dropdown .navbar-brand {
+ .navbar-nav .dropdown .navbar-brand {
         max-width: 200px;
         margin-right: 5px;
         margin-left: 10px;
+    }
+
+    #calendar {
+      padding-left: 2em;
+      height: auto;
     }
 
 }
