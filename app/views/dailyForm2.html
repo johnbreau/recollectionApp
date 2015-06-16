@@ -46,7 +46,7 @@
   					var currentTemp = current.temperature();
   					var currentCond = current.conditions();				
   					var finalTemp = Math.round(parseInt(currentTemp) - 273.15) * 9 / 5 + 32;
-  					$("#weather").attr('placeholder', finalTemp + " " + currentCond);	
+  					$("#weather").attr('value', finalTemp + " " + currentCond);	
 
 					});
 
