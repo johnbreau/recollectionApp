@@ -1,57 +1,58 @@
 
- <form id="dailyEntry" name="dailtyEntry" >
+<form id="dailyEntry" name="dailtyEntry" >
  	
  	<div class="input-group input-group-lg rp_inputBox">
-    <span class="input-group-addon" id="sizing-addon1">></span>
-    <input type="text" name="MLB" id="MLB" class="form-control stored" placeholder="MLB" value="" />
+		    <span class="input-group-addon" id="sizing-addon1">></span>
+		    <input type="text" name="MLB" id="MLB" class="form-control stored" placeholder="MLB" value="" />
 	</div>
 	
 	<div class="input-group input-group-lg rp_inputBox">	
-    <span class="input-group-addon" id="sizing-addon1">></span> 
-    <input type="email" name="weather" id="weather" class="form-control stored" placeholder="<span id='output'></span>" value=""></input>
+		    <span class="input-group-addon" id="sizing-addon1">></span> 
+		    <input type="email" name="weather" id="weather" class="form-control stored" placeholder="<span id='output'></span>" value=""></input>
 	</div>
 
 	<div class="input-group input-group-lg rp_inputBox"> 
-	<a href="#/dailyForm1"><input type="button" class="btn btn-default pull-left" value="Back" /></a>
-    	<a href="#/dailyForm3"><input type="button" class="btn btn-default pull-right" value="Next" /></a>
+		<a href="#/dailyForm1"><input type="button" class="btn btn-default pull-left" value="Back" /></a>
+	    	<a href="#/dailyForm3"><input type="button" class="btn btn-default pull-right" value="Next" /></a>
 	</div>
 
 </form>
 
-		<script type="text/javascript">
-		
-		$(document).ready(function () {
-		    function init() {
-		        if (localStorage["MLB"]) {
-		            $('#MLB').val(localStorage["MLB"]);
-		        }
-		        if (localStorage["weather"]) {
-		            $('#weather').val(localStorage["weather"]);
-		        }
-		    }
-		    init();
-		});
-
-		$('.stored').keyup(function () {
-		    localStorage[$(this).attr('name')] = $(this).val();
-		});
-
+	<!--localStorage for form values -->
+		<script type="text/javascript">		
+			$(document).ready(function () {
+			    function init() {
+			        if (localStorage["MLB"]) {
+			            $('#MLB').val(localStorage["MLB"]);
+			        }
+			        if (localStorage["weather"]) {
+			            $('#weather').val(localStorage["weather"]);
+			        }
+			    }
+			    init();
+			});
+			$('.stored').keyup(function () {
+			    localStorage[$(this).attr('name')] = $(this).val();
+			});
 		</script>
 
 
+	<!-- Wunderground Weather API -->
 		<script type="text/javascript">
-		$(document).ready(function () {
-
-					Weather.getCurrent("Budapest", function(current) {
-  					var currentTemp = current.temperature();
-  					var currentCond = current.conditions();				
-  					var finalTemp = Math.round(parseInt(currentTemp) - 273.15) * 9 / 5 + 32;
-  					$("#weather").attr('value', finalTemp + " " + currentCond);	
-
+			$(document).ready(function () {			
+				$.getJSON('http://api.wunderground.com/api/2f895b6b08bd38cd/conditions/q/MO/Kansas_City.json', function(weatherResults){
+						$("#weather").attr('value', weatherResults.current_observation.temp_f + " degrees & " + weatherResults.current_observation.icon);
 					});
-
-		});
+				});
 		</script>
 
+
+		<script type="text/javascript">
+		$(document).ready(function () {
+				 $.getJSON('https://erikberg.com/mlb/teams/chicago-cubs.json', function(MLBResults) {
+				        	$("#MLB").attr('value', MLBResults);
+				        });
+				});
+		</script>
 
 
