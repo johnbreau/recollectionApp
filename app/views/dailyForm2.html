@@ -1,5 +1,10 @@
 
 <form id="dailyEntry" name="dailtyEntry" >
+
+	<div class="input-group input-group-lg rp_inputBox">
+		    <span class="input-group-addon" id="sizing-addon1">></span>
+		    <input type="text" name="topStory" id="topStory" class="form-control stored" placeholder="Top News Headline" value="" />
+	</div>
  	
  	<div class="input-group input-group-lg rp_inputBox">
 		    <span class="input-group-addon" id="sizing-addon1">></span>
@@ -8,7 +13,7 @@
 	
 	<div class="input-group input-group-lg rp_inputBox">	
 		    <span class="input-group-addon" id="sizing-addon1">></span> 
-		    <input type="email" name="weather" id="weather" class="form-control stored" placeholder="<span id='output'></span>" value=""></input>
+		    <input type="text" name="weather" id="weather" class="form-control stored" placeholder="<span id='output'></span>" value=""></input>
 	</div>
 
 	<div class="input-group input-group-lg rp_inputBox"> 
@@ -43,38 +48,40 @@
 				$.getJSON('http://api.wunderground.com/api/2f895b6b08bd38cd/conditions/q/MO/Kansas_City.json', function(weatherResults){
 						$("#weather").attr('value', weatherResults.current_observation.temp_f + " degrees & " + weatherResults.current_observation.icon);
 					});
-				});
+			});
 		</script>
 
 
 		<script type="text/javascript">
-		$(document).ready(function () {
-				 $.getJSON('https://erikberg.com/mlb/teams/chicago-cubs.json', function(MLBResults) {
-				        	$("#MLB").attr('value', MLBResults);
-				        });
-				});
+			// $(document).ready(function () {
+			// 	$.ajax({
+			// 		url: "https://erikberg.com/mlb/teams.json",
+			// 		type: "GET",
+			// 		dataType: "json",
+			// 		success: function() {
+			// 			alert('hello');
+			// 		},
+
+			// 		error: function() {
+			// 			alert("boo");
+			// 		},
+			// 		beforeSend: setHeader
+			// 	});
+
+			// 	function setHeader(xhr) {
+			// 		xhr.setRequestHeader("Authorization: Bearer ff-bfa8-35ffa9c55a3d");
+			// 	}			
+			// });
 		</script>
 
+		<!-- New York Times Top Stories -->
 		<script type="text/javascript">
-
-			$.ajax({
-				 url: "https://www.google.com/accounts/ClientLogin",
-				 beforeSend: function(xhr) { 
-				  xhr.setRequestHeader("Authorization", "Basic " + btoa("username:password")); 
-				 },
-				 type: 'POST',
-				 dataType: 'json',
-				 contentType: 'application/json',
-				 processData: false,
-				 data: '{"foo":"bar"}',
-				 success: function (data) {
-				  alert(JSON.stringify(data));
-				},
-				  error: function(){
-				   alert("Cannot get data");
-				 }
+			$(document).ready(function () {			
+				$.getJSON('http://api.nytimes.com/svc/topstories/v1/home.json?api-key=473195faa327df2bd00c96c6058be450:8:68523339', function(timesResults){				 $("#topStory").attr("value", timesResults.results[0].title);	
+					});
 				});
-
 		</script>
 
+
+		
 

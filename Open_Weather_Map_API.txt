@@ -19,3 +19,16 @@ wunderground
 
 API - 2f895b6b08bd38cd
 Project Name - recollectionApp
+
+
+NYT Newswire
+
+Application: recollectionApp 
+Key: acc304744434c7e93e1d0e67b69575af:17:68523339
+
+NYT Top Stories
+
+Application: recollectionApp 
+Key: 473195faa327df2bd00c96c6058be450:8:68523339
+
+http://api.nytimes.com/svc/topstories/v1/home/json?callbackTopStories?api-key=473195faa327df2bd00c96c6058be450:8:68523339

@@ -5,10 +5,32 @@
    		 <span class="input-group-addon" id="sizing-addon1">></span>
     		<input type="text" name="entryTitle" id="entryTitle" class="form-control stored" placeholder="Entry Title" value="" />
 	</div>
+
+	  <div class="row input-group input-group-lg">
+	  	<div class="btn-group-lg" data-toggle="buttons">
+	  	<span class="radioLabel">Rate the Day:</span>
+	                <label class="btn btn-default">
+	                    <input type="radio" id="dayRating" name="dayRating_1" class="form-control stored" value="1" /> 1
+	                </label> 
+	                <label class="btn btn-default">
+	                    <input type="radio" id="dayRating" name="dayRating_2" class="form-control stored" value="2" /> 2
+	                </label> 
+	                <label class="btn btn-default">
+	                    <input type="radio" id="dayRating" name="dayRating_3" class="form-control stored" checked="checked" value="3" /> 3
+	                </label> 
+	                <label class="btn btn-default">
+	                    <input type="radio" id="dayRating" name="dayRating_4" class="form-control stored" value="4" /> 4
+	                </label> 
+	                <label class="btn btn-default active">
+	                    <input type="radio" id="dayRating" name="dayRating_5" class="form-control stored"  value="5" /> 5
+	                </label>
+	                </span>
+    		</div>
+    	</div>
 	
 	<div class="input-group input-group-lg rp_inputBox">
     	<span class="input-group-addon" id="sizing-addon1">></span> 
-    		<input type="email" name="tags" id="tags" class="form-control stored" placeholder="Tags" value="" />
+    		<input type="text" name="tags" id="tags" class="form-control stored" placeholder="Tags" value="" />
 	</div>
 
 	<div class="input-group input-group-lg rp_inputBox">  
@@ -35,6 +57,9 @@
 		        }
 		        if (localStorage["dailyEntry"]) {
 		            $('#mainEntry').val(localStorage["mainEntry"]);
+		        }
+		         if (localStorage["dayRating"]) {
+		            $('#dayRating').val(localStorage["mainEntry"]);
 		        }
 		    }
 		    init();

@@ -76,6 +76,12 @@ textarea {
 h1 {
   text-align: left; }
 
+.radioLabel {
+  margin: 8em .75em 0 2em;
+  font-family: "Sanchez", serif;
+  font-size: 1.35em;
+  color: #999; }
+
 #calendar {
   padding-left: 2em; }
 
