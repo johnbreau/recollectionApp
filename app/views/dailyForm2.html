@@ -55,4 +55,26 @@
 				});
 		</script>
 
+		<script type="text/javascript">
+
+			$.ajax({
+				 url: "https://www.google.com/accounts/ClientLogin",
+				 beforeSend: function(xhr) { 
+				  xhr.setRequestHeader("Authorization", "Basic " + btoa("username:password")); 
+				 },
+				 type: 'POST',
+				 dataType: 'json',
+				 contentType: 'application/json',
+				 processData: false,
+				 data: '{"foo":"bar"}',
+				 success: function (data) {
+				  alert(JSON.stringify(data));
+				},
+				  error: function(){
+				   alert("Cannot get data");
+				 }
+				});
+
+		</script>
+
 
