@@ -10,19 +10,19 @@
 	  	<div class="btn-group-lg" data-toggle="buttons">
 	  	<span class="radioLabel">Rate the Day:</span>
 	                <label class="btn btn-default">
-	                    <input type="radio" id="dayRating_1" name="dayRating" class="form-control stored" value="1" /> 1
+	                    <input type="radio"  name="dayRating" class="form-control stored"  value="1" /> 1
 	                </label> 
 	                <label class="btn btn-default">
-	                    <input type="radio" id="dayRating_2" name="dayRating" class="form-control stored" value="2" /> 2
+	                    <input type="radio"  name="dayRating" class="form-control stored" value="2" /> 2
 	                </label> 
 	                <label class="btn btn-default">
-	                    <input type="radio" id="dayRating_3" name="dayRating" class="form-control stored" checked="checked" value="3" /> 3
+	                    <input type="radio" name="dayRating"  class="form-control stored"  value="3" /> 3
 	                </label> 
 	                <label class="btn btn-default">
-	                    <input type="radio" id="dayRating_4" name="dayRating" class="form-control stored" value="4" /> 4
+	                    <input type="radio"  name="dayRating" class="form-control stored" value="4" /> 4
 	                </label> 
 	                <label class="btn btn-default active">
-	                    <input type="radio" id="dayRating_5" name="dayRating" class="form-control stored"  value="5" /> 5
+	                    <input type="radio" name="dayRating" class="form-control stored"  value="5" /> 5
 	                </label>
 	                </span>
     		</div>
@@ -48,6 +48,9 @@
 
 		<script type="text/javascript">
 		$(document).ready(function () {
+
+		 localStorage['dayRating'] = $('radio[name=dayRating]:checked').val(localStorage["dayRating"]);
+
 		    function init() {
 		        if (localStorage["entryTitle"]) {
 		            $('#entryTitle').val(localStorage["entryTitle"]);
@@ -57,9 +60,6 @@
 		        }
 		        if (localStorage["dailyEntry"]) {
 		            $('#mainEntry').val(localStorage["mainEntry"]);
-		        }
-		         if (localStorage["dayRating"]) {
-		            $('#dayRating').val(localStorage["mainEntry"]);
 		        }
 		    }
 		    init();

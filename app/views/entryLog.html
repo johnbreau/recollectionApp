@@ -1,0 +1,41 @@
+
+<div id="output"></div>
+
+		<script type="text/javascript">
+		$(document).ready(function () {
+		    function init() {
+		        if (localStorage["pain"]) {
+		            $('#pain').val(localStorage["pain"]);
+		        }
+		        if (localStorage["dailyNews"]) {
+		            $('#dailyNews').val(localStorage["dailyNews"]);
+		        }
+		    }
+		    init();
+		});
+
+		$('.stored').keyup(function () {
+		    localStorage[$(this).attr('name')] = $(this).val();
+		});
+
+		</script>
+
+
+		<script type="text/javascript">
+
+			$("#output").click (function() {
+
+			var getEntries = function( ) {
+
+			var xhr = new XMLHttpRequest();
+    			xhr.open("GET", "https://api.mongolab.com/api/1/databases/recollectionapp/collections/daily?apiKey=0ICZTbnaNJoaKZDCnIl-NIZZ-Jd8_TmB", true);
+    			xhr.responseType = 'json';
+
+    			alert("getEntries")
+
+    			}
+
+			});
+
+		</script>
+

@@ -36,6 +36,11 @@ angular
          templateUrl: 'views/mainCalendar.html',
          controller: 'AboutCtrl'
       })
+
+       .when('/entryLog', {
+         templateUrl: 'views/entryLog.html',
+         controller: 'AboutCtrl'
+      })
       
       .otherwise({
         redirectTo: '/'
