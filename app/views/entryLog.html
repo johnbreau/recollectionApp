@@ -1,41 +1,61 @@
+<div id="div1"></div>
 
-<div id="output"></div>
+<script type="text/javascript">
+var getJSON = function(url, successHandler, errorHandler) {
+  var xhr = typeof XMLHttpRequest != 'undefined'
+    ? new XMLHttpRequest()
+    : new ActiveXObject('Microsoft.XMLHTTP');
+  xhr.open('get', url, true);
+  xhr.responseType = 'json';
+  xhr.onreadystatechange = function() {
+    var status;
+    var data;
+    // https://xhr.spec.whatwg.org/#dom-xmlhttprequest-readystate
+    if (xhr.readyState == 4) { // `DONE`
+      status = xhr.status;
+      if (status == 200) {
+        successHandler && successHandler(xhr.response);
+      } else {
+        errorHandler && errorHandler(status);
+      }
+    }
+  };
+  xhr.send();
+};
 
-		<script type="text/javascript">
-		$(document).ready(function () {
-		    function init() {
-		        if (localStorage["pain"]) {
-		            $('#pain').val(localStorage["pain"]);
-		        }
-		        if (localStorage["dailyNews"]) {
-		            $('#dailyNews').val(localStorage["dailyNews"]);
-		        }
-		    }
-		    init();
-		});
+getJSON('https://api.mongolab.com/api/1/databases/recollectionapp/collections/daily?apiKey=0ICZTbnaNJoaKZDCnIl-NIZZ-Jd8_TmB', function(data) {
 
-		$('.stored').keyup(function () {
-		    localStorage[$(this).attr('name')] = $(this).val();
-		});
+    var i;
+    var out = "<table id='entryTable' class='table table-striped table-hover table-responsive'><thead><tr><th>Title</th><th>Main Entry</th><th>Daily News</th><th>MLB</th><th>Daily Pain</th><th>Weather</th></tr></thead>";
 
-		</script>
+    for(i = 0; i < data.length; i++) {
+        out += "<tr><td>" + 
+        data[i].entryTitle +
+        "</td><td>" +
+        data[i].mainEntry +
+        "</td><td>" +
+        data[i].topStory+
+        "</td><td>" +
+         data[i].MLB +
+        "</td><td>" +
+         data[i].pain +
+        "</td><td>" +
+        data[i].weather +
+        "</td></tr>";
+    }
+    out += "</table>"
+    document.getElementById("div1").innerHTML = out;
+
+  });
 
 
-		<script type="text/javascript">
+</script>
 
-			$("#output").click (function() {
 
-			var getEntries = function( ) {
 
-			var xhr = new XMLHttpRequest();
-    			xhr.open("GET", "https://api.mongolab.com/api/1/databases/recollectionapp/collections/daily?apiKey=0ICZTbnaNJoaKZDCnIl-NIZZ-Jd8_TmB", true);
-    			xhr.responseType = 'json';
 
-    			alert("getEntries")
 
-    			}
 
-			});
 
-		</script>
+
 

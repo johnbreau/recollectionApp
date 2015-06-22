@@ -88,6 +88,9 @@ h1 {
 #currentWeather {
   padding-left: 2em; }
 
+#entryTable {
+  margin-left: 2em; }
+
 @media screen and (max-width: 768px) {
   .dropdown.open > .navbar-brand + .dropdown-menu {
     left: 10px; }

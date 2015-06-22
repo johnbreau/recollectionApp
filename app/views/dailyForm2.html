@@ -27,6 +27,9 @@
 		<script type="text/javascript">		
 			$(document).ready(function () {
 			    function init() {
+			      if (localStorage["topStory"]) {
+			            $('#topStory').val(localStorage["topStory"]);
+			        }
 			        if (localStorage["MLB"]) {
 			            $('#MLB').val(localStorage["MLB"]);
 			        }
@@ -51,30 +54,18 @@
 			});
 		</script>
 
-
+	<!-- XMLStats API -->
 		<script type="text/javascript">
-			// $(document).ready(function () {
-			// 	$.ajax({
-			// 		url: "https://erikberg.com/mlb/teams.json",
-			// 		type: "GET",
-			// 		dataType: "json",
-			// 		success: function() {
-			// 			alert('hello');
-			// 		},
 
-			// 		error: function() {
-			// 			alert("boo");
-			// 		},
-			// 		beforeSend: setHeader
-			// 	});
-
-			// 	function setHeader(xhr) {
-			// 		xhr.setRequestHeader("Authorization: Bearer ff-bfa8-35ffa9c55a3d");
-			// 	}			
-			// });
+			$(document).ready(function () {			
+				$.getJSON('https://erikberg.com/mlb/teams.json', function(mlbResults){
+						alert(mlbResults);
+					});
+			});
 		</script>
 
-		<!-- New York Times Top Stories -->
+
+	<!-- New York Times Top Stories -->
 		<script type="text/javascript">
 			$(document).ready(function () {			
 				$.getJSON('http://api.nytimes.com/svc/topstories/v1/home.json?api-key=473195faa327df2bd00c96c6058be450:8:68523339', function(timesResults){				 $("#topStory").attr("value", timesResults.results[0].title);	
