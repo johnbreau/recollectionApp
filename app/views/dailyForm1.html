@@ -1,12 +1,32 @@
 
  <form id="dailyEntry" name="dailtyEntry">
+
+ 	<div class="input-group input-group-lg rp_inputBox">
+    	<span class="input-group-addon" id="sizing-addon1">></span> 
+    		<input type="text" name="dateStamp" id="dateStamp" class="form-control stored" placeholder="Date" value="" />
+	</div>
+
+	<div class="input-group input-group-lg rp_inputBox">
+    	<span class="input-group-addon" id="sizing-addon1">></span> 
+    		<input type="text" name="location" id="location" class="form-control stored" placeholder="Location" value="" />
+	</div>
  	
  	<div class="input-group input-group-lg rp_inputBox">
    		 <span class="input-group-addon" id="sizing-addon1">></span>
     		<input type="text" name="entryTitle" id="entryTitle" class="form-control stored" placeholder="Entry Title" value="" />
 	</div>
 
-	  <div class="row input-group input-group-lg">
+	<div class="input-group input-group-lg rp_inputBox">  
+	<span class="input-group-addon" id="sizing-addon1">></span> 
+   		<textarea class="form-control stored textarea" rows="5" name="mainEntry" id="mainEntry" placeholder="Your Daily Entry"></textarea>
+	</div>
+	
+	<div class="input-group input-group-lg rp_inputBox">
+    	<span class="input-group-addon" id="sizing-addon1">></span> 
+    		<input type="text" name="tags" id="tags" class="form-control stored" placeholder="Tags" value="" />
+	</div>
+
+	 <div class="row input-group input-group-lg">
 	  	<div class="btn-group-lg" data-toggle="buttons">
 	  	<span class="radioLabel">Rate the Day:</span>
 	                <label class="btn btn-default">
@@ -27,16 +47,6 @@
 	                </span>
     		</div>
     	</div>
-	
-	<div class="input-group input-group-lg rp_inputBox">
-    	<span class="input-group-addon" id="sizing-addon1">></span> 
-    		<input type="text" name="tags" id="tags" class="form-control stored" placeholder="Tags" value="" />
-	</div>
-
-	<div class="input-group input-group-lg rp_inputBox">  
-	<span class="input-group-addon" id="sizing-addon1">></span> 
-   		<textarea class="form-control stored textarea" rows="5" name="mainEntry" id="mainEntry" placeholder="Your Daily Entry"></textarea>
-	</div>
 
 	<div class="input-group input-group-lg rp_inputBox"> 
    	 	<a href="#/dailyForm2"><input type="submit" class="btn btn-default pull-right submitForm" value="Next" />
@@ -48,18 +58,44 @@
 
 		<script type="text/javascript">
 		$(document).ready(function () {
+			var dateStamp = new Date();
+			 $("#dateStamp").attr("value", dateStamp);
+		});
+		</script>
+
+		<!-- Google Geolocation API -->
+		<script type="text/javascript">
+			$(document).ready(function () {			
+				$.getJSON('https://www.googleapis.com/geolocation/v1/geolocate?key=AIzaSyBeqrpzdK5ataRb7vRB_7F5BNRUpoMtCBU', function(locationResults){
+						$("#location").attr('value', locationResults);
+					});
+			});
+		</script>
+
+
+		<script type="text/javascript">
+		$(document).ready(function () {
 
 		 localStorage['dayRating'] = $('radio[name=dayRating]:checked').val(localStorage["dayRating"]);
 
 		    function init() {
+		       if (localStorage["dateStamp"]) {
+		            $('#dateStamp').val(localStorage["dateStamp"]);
+		        }
+		         if (localStorage["location"]) {
+		            $('#location').val(localStorage["location"]);
+		        }
 		        if (localStorage["entryTitle"]) {
 		            $('#entryTitle').val(localStorage["entryTitle"]);
+		        }
+		        if (localStorage["dailyEntry"]) {
+		            $('#mainEntry').val(localStorage["mainEntry"]);
 		        }
 		        if (localStorage["tags"]) {
 		            $('#tags').val(localStorage["tags"]);
 		        }
-		        if (localStorage["dailyEntry"]) {
-		            $('#mainEntry').val(localStorage["mainEntry"]);
+		        if (localStorage["dayRating"]) {
+		            $('#dayRating').val(localStorage["dayRating"]);
 		        }
 		    }
 		    init();
