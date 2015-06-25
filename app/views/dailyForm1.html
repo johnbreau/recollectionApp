@@ -55,7 +55,8 @@
 </form>
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
-
+		
+		<!--Date Stamp-->
 		<script type="text/javascript">
 		$(document).ready(function () {
 			var dateStamp = new Date();
@@ -63,13 +64,12 @@
 		});
 		</script>
 
-		<!-- Google Geolocation API -->
+		<!-- Geolocation API -->
 		<script type="text/javascript">
-			$(document).ready(function () {			
-				$.getJSON('https://www.googleapis.com/geolocation/v1/geolocate?key=AIzaSyBeqrpzdK5ataRb7vRB_7F5BNRUpoMtCBU', function(locationResults){
-						$("#location").attr('value', locationResults);
-					});
-			});
+		$.get("http://ipinfo.io", function (response) {
+		    $("#ip").html("IP: " + response.ip);
+		    $("#location").attr("value", "Location: " + response.city + ", " + response.region);
+		     }, "jsonp");
 		</script>
 
 

@@ -101,20 +101,24 @@ h1 {
   h1 {
     font-size: 3em; }
 
+  .metroButtonContainer {
+    padding-top: 2em;
+    margin-left: .3em; }
+
   .metroButtons {
-    padding: .25em;
+    padding: .50em;
     font-family: "Sanchez", serif;
     float: left;
-    width: 7.5em;
-    height: 7.5em;
+    width: 10.25em;
+    height: 10.25em;
     background-color: #000;
     color: #fff;
-    margin: .5em;
+    margin: .3em;
     text-align: center; }
 
   .metroButtons i {
-    top: 27.5%;
-    font-size: 2.25em; }
+    top: 33%;
+    font-size: 3em; }
 
   .navbar-nav .dropdown .navbar-brand {
     max-width: 200px;
