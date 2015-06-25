@@ -1,15 +1,81 @@
 
- <form id="dailyEntry" name="dailtyEntry" >
+ <form id="dailyEntry" name="dailtyEntry" class="form-horizontal">         
+ 	<div class="form-group">
  	
- 	<div class="input-group input-group-lg rp_inputBox">
-  		 <span class="input-group-addon" id="sizing-addon1">></span>
-   		 <input type="text" name="pain" id="pain" class="form-control stored" placeholder="Pain Level" value="" />
-	</div>
+ 	 <div class="row input-group input-group-lg">
+	  	<div class="btn-group-lg" data-toggle="buttons">
+	  	<span class="radioLabel">Rate the Day:</span>
+	                <label class="btn btn-default">
+	                    <input type="radio"  name="dayRating" class="form-control stored"  value="1" /> 1
+	                </label> 
+	                <label class="btn btn-default">
+	                    <input type="radio"  name="dayRating" class="form-control stored" value="2" /> 2
+	                </label> 
+	                <label class="btn btn-default">
+	                    <input type="radio" name="dayRating"  class="form-control stored"  value="3" /> 3
+	                </label> 
+	                <label class="btn btn-default">
+	                    <input type="radio"  name="dayRating" class="form-control stored" value="4" /> 4
+	                </label> 
+	                <label class="btn btn-default active">
+	                    <input type="radio" name="dayRating" class="form-control stored"  value="5" /> 5
+	                </label>
+	                </span>
+    		</div>
+    	</div>
+    	<br/>
 	
-	<div class="input-group input-group-lg rp_inputBox">	
- 		<span class="input-group-addon" id="sizing-addon1">></span> 
-    		<input type="email" name="dailyNews" id="dailyNews" class="form-control stored" placeholder="Daily News" value=""/>
+	 <div class="row input-group input-group-lg">
+	  	<div class="btn-group-lg" data-toggle="buttons">
+	  	<span class="radioLabel">Daily Pain Rating:</span>
+	                <label class="btn btn-default">
+	                    <input type="radio"  name="painRating" class="form-control stored"  value="1" /> 1
+	                </label> 
+	                <label class="btn btn-default">
+	                    <input type="radio"  name="painRating" class="form-control stored" value="2" /> 2
+	                </label> 
+	                <label class="btn btn-default">
+	                    <input type="radio" name="painRating"  class="form-control stored"  value="3" /> 3
+	                </label> 
+	                <label class="btn btn-default">
+	                    <input type="radio"  name="painRating" class="form-control stored" value="4" /> 4
+	                </label> 
+	                <label class="btn btn-default active">
+	                    <input type="radio" name="painRating" class="form-control stored"  value="5" /> 5
+	                </label>
+	                </span>
+    		</div>
+    	</div>
+    	<br/>
+
+
+	<div class="col-md-10 columns"> 
+	<span class="radioLabel">Daily Pain Rating:</span>
+	 <label class="checkbox-inline" for="Checkboxes_Apple">                       
+	 	<input type="checkbox" name="Checkboxes" id="Weekend" value="Weekend"> Weekend                     
+	 </label>     
+
+	 <label class="checkbox-inline" for="Checkboxes_Orange">                       
+	 	 <input type="checkbox" name="Checkboxes" id="Work" value="Work"> Work                     
+	 </label>  
+	
+	<label class="checkbox-inline" for="Checkboxes_Orange">                       
+	 	 <input type="checkbox" name="Checkboxes" id="Lego" value="LEGO "> LEGO                     
+	 </label>  
+
+	 <label class="checkbox-inline" for="Checkboxes_Orange">                       
+	 	 <input type="checkbox" name="Checkboxes" id="Travel" value="Travel "> Travel                     
+	 </label>  
+
+	 <label class="checkbox-inline" for="Checkboxes_Orange">                       
+	 	 <input type="checkbox" name="Checkboxes" id="Computer" value="Computer Stuff"> Computer Stuff                    
+	 </label>  
+ 	                   	              
+	 </div>
+
 	</div>
+
+	
 
 	<div class="input-group input-group-lg rp_inputBox"> 
 		<a href="#/dailyForm2"><input type="button" class="btn btn-default pull-left" value="Back" /></a>
@@ -23,11 +89,14 @@
 		<script type="text/javascript">
 		$(document).ready(function () {
 		    function init() {
-		        if (localStorage["pain"]) {
-		            $('#pain').val(localStorage["pain"]);
+		        if (localStorage["painRating"]) {
+		            $('#painRating').val(localStorage["painRating"]);
 		        }
-		        if (localStorage["dailyNews"]) {
-		            $('#dailyNews').val(localStorage["dailyNews"]);
+		        if (localStorage["dayRating"]) {
+		            $('#dayRating').val(localStorage["dayRating"]);
+		        }
+		         if (localStorage["dailyTags"]) {
+		            $('#dailyTags').val(localStorage["dailyTags"]);
 		        }
 		    }
 		    init();
