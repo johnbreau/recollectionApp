@@ -98,15 +98,23 @@ textarea {
   padding-top: 2em;
 }
 
+.textareaSize {
+  font-size: 1.35em;
+}
+
 h1 {
   text-align: left;
 }
 
 .radioLabel {
-   margin: 8em .75em 0 2em;
+  padding-right: .5em;
    font-family: $mainFont;
    font-size: 1.35em;
    color:#999;
+}
+
+.ratingSystem {
+  margin-left: 2.5em;
 }
 
 #calendar {

@@ -1,8 +1,13 @@
 
  <form id="dailyEntry" name="dailtyEntry" class="form-horizontal">         
  	<div class="form-group">
+
+ 	<div class="input-group input-group-lg rp_inputBox">
+    	<span class="input-group-addon" id="sizing-addon1">></span> 
+    		<input type="number" name="meditate" id="meditate" class="form-control stored" placeholder="Meditation Time (In Minutes)"  value="" />
+	</div>
  	
- 	 <div class="row input-group input-group-lg">
+ 	 <div class="row input-group input-group-lg ratingSystem">
 	  	<div class="btn-group-lg" data-toggle="buttons">
 	  	<span class="radioLabel">Rate the Day:</span>
 	                <label class="btn btn-default">
@@ -25,9 +30,9 @@
     	</div>
     	<br/>
 	
-	 <div class="row input-group input-group-lg">
+	 <div class="row input-group input-group-lg ratingSystem">
 	  	<div class="btn-group-lg" data-toggle="buttons">
-	  	<span class="radioLabel">Daily Pain Rating:</span>
+	  	<span class="radioLabel">Pain:</span>
 	                <label class="btn btn-default">
 	                    <input type="radio"  name="painRating" class="form-control stored"  value="1" /> 1
 	                </label> 
@@ -49,8 +54,8 @@
     	<br/>
 
 
-	<div class="col-md-10 columns"> 
-	<span class="radioLabel">Daily Pain Rating:</span>
+	<div class="col-md-10 columns btn-group-lg ratingSystem"> 
+	<span class="radioLabel">Tags:</span>
 	 <label class="checkbox-inline" for="Checkboxes_Apple">                       
 	 	<input type="checkbox" name="Checkboxes" id="Weekend" value="Weekend"> Weekend                     
 	 </label>     
@@ -126,4 +131,5 @@
 			});
 
 		</script>
+
 
