@@ -7,11 +7,9 @@
  * # MainCtrl
  * Controller of the bdRecapApp
  */
-angular.module('recollectionApp')
-  .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+recollectionApp.controller('MainCtrl', [ '$scope', function ($scope) {
+    $scope.calendarData = [
+
+			
+    ]
+}]);

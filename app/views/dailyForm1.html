@@ -41,7 +41,7 @@
 		<script type="text/javascript">
 		$.get("http://ipinfo.io", function (response) {
 		    $("#ip").html("IP: " + response.ip);
-		    $("#location").attr("value", "Location: " + response.city + ", " + response.region);
+		    $("#location").attr("value",  response.city + ", " + response.region);
 		     }, "jsonp");
 		</script>
 
